@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Finance Dashboard</h1>
+
+    <!-- Add Record -->
+    <div>
+      <h2>Add Record</h2>
+      <input id="amount" placeholder="Amount" />
+      <input id="category" placeholder="Category" />
+
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <button onclick="addRecord()">Add</button>
+    </div>
+
+    <!-- Records -->
+    <div>
+      <h2>Records</h2>
+      <button onclick="getRecords()">Load Records</button>
+      <ul id="recordsList"></ul>
+    </div>
+
+    <!-- Dashboard -->
+    <div>
+      <h2>Dashboard</h2>
+      <button onclick="getDashboard()">Load Summary</button>
+      <p id="summary"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

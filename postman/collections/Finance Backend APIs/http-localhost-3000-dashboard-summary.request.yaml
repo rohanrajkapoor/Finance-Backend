@@ -1,0 +1,7 @@
+$kind: http-request
+name: http://localhost:3000/dashboard/summary
+url: http://localhost:3000/dashboard/summary
+method: GET
+headers:
+  role: analyst
+order: 1775087015159
